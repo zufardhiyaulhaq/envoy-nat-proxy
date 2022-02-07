@@ -9,7 +9,7 @@ static_resources:
         - name: envoy.filters.network.tcp_proxy
           typed_config:
             '@type': type.googleapis.com/envoy.extensions.filters.network.tcp_proxy.v3.TcpProxy
-            idle_timeout: 15s
+            idle_timeout: 10s
             access_log:
             - name: envoy.access_loggers.file
               typed_config:

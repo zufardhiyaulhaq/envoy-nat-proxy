@@ -19,9 +19,8 @@ static_resources:
             stat_prefix: redis
   clusters:
   - name: redis
-    connect_timeout: 15s
-    type: ORIGINAL_DST
-    lb_policy: 
+    connect_timeout: 10s
+    type: strict_dns
     transport_socket:
       name: envoy.transport_sockets.raw_buffer
     load_assignment:

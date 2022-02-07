@@ -16,7 +16,7 @@ services:
       REDIS_CLUSTER: "false"
       REDIS_HOST: 172.18.0.3:6379
       REDIS_RETRY: -1
-      REDIS_IDLE_TIMEOUT: -1
+      REDIS_IDLE_TIMEOUT: 5
     image: zufardhiyaulhaq/echo-redis:49dc0e6
   echo-redis-tcpdump:
     network_mode: service:echo-redis
