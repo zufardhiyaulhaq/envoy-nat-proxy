@@ -4,7 +4,7 @@ used for spiking envoy TCP proxy
 ### Topology
 This using 3 service
 - echo-redis, an HTTP server that connect to Redis
-- envoy, intermediate system between echo-redis and redis
+- envoy & aws, intermediate system with TCP proxy between echo-redis and redis
 - redis, just a plain redis
 
 ### Usage
